@@ -34,7 +34,7 @@ void loop()
     {
    tone(Pz,f);delay(30);noTone(Pz);    // Sound if received 
    //rx.printBuffer("rx: ",buf, buflen);
-   char *msg=strtok(buf,ext);          // extract from tramsmite
+   char *msg=strtok(buf,ext);          // extract data
    Serial.println((char*)buf);         // print useful data
     }
 }
