@@ -1,4 +1,7 @@
-int pz = 11;   // piezo (+)11 (-)GND
+// Uno Rx to DS-12 Tx
+// Uno Tx to DS-13 Rx
+
+int pz = 11;             // piezo (+)11 (-)GND
 
 void setup() {
   Serial.begin(9600);    // Same as tx
