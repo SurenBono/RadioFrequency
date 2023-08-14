@@ -1,5 +1,5 @@
 // Uno Rx to DS-12 Tx
-// Uno Tx to DS-13 Rx
+// Uno Tx to DS-12 Rx
 
 int pz = 11;             // piezo (+)11 (-)GND
 
