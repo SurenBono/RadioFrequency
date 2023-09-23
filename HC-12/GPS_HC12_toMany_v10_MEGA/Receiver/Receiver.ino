@@ -24,8 +24,7 @@
  char time_b[15],date[10],wday[10];
  int i;
  String beep,sub;
- bool flag;
-
+ 
 MD_Parola P = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
 textEffect_t FX[] ={PA_SCROLL_LEFT,PA_PRINT,PA_SCROLL_RIGHT};
 
@@ -81,14 +80,14 @@ token = strtok(NULL, delimiter);
   beep=String (tokenStorage[2]);
   sub=beep.substring(5,11);
   
-    if(sub==":00:00" && flag==0 || sub=="00:00" && flag==0){ 
+    if(sub==":00:00" || sub=="00:00" ){ 
     tone(Pz,f);delay(30);noTone(Pz);delay(30);
-    tone(Pz,f);delay(30);noTone(Pz);delay(30);flag=1;
-    }else{flag=0;}
+    tone(Pz,f);delay(30);noTone(Pz);delay(30);
+    }
 
-    if(sub==":30:00" && flag==0 || sub=="30:00" && flag==0){ 
-    tone(Pz,f);delay(30);noTone(Pz);delay(30);flag=1;
-    }else{flag=0;}
+    if(sub==":30:00" || sub=="30:00" ){ 
+    tone(Pz,f);delay(30);noTone(Pz);delay(30);
+    }
 
   Serial.print(date);Serial.print(",");Serial.print(wday);Serial.print(",");
   Serial.println(tokenStorage[2]);
