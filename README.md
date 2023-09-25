@@ -3,9 +3,9 @@ Radio frequency manipulation..
 
 Featuring :
 
-- Cheap 1-way 433mhz (<10m)
-- 2-Way HC-12 (≈ 150 m)
-- 2-Way espnow based (≈100m)
+- Cheap Simplex 433mhz (<10m)
+- Half Duplex HC-12 (≈ 150 m)
+- Half Duplex espnow based (≈50m)
 - Radio Controlled Timekeeping Clocks
   
 Example of GPS RCC : 
