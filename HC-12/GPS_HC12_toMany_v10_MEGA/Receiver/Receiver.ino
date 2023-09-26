@@ -90,7 +90,7 @@ token = strtok(NULL, delimiter);
     }
 
   Serial.print(date);Serial.print(",");Serial.print(wday);Serial.print(",");
-  Serial.println(tokenStorage[2]);
+  Serial.print(tokenStorage[2]);Serial.print(",");Serial.println(tokenStorage[3]);
   
   seq();
 }
