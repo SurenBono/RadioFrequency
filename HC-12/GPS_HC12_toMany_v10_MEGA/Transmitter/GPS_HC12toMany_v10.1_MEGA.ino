@@ -59,7 +59,7 @@ void setup(void)
   P.setTextAlignment(PA_CENTER);      
   P.print("S&G GPS v10");  
    
-Timer1.initialize(1000000); 
+Timer1.initialize(1000000); // micros
 Timer1.attachInterrupt(transmitData); 
 Timer1.start(); 
   
