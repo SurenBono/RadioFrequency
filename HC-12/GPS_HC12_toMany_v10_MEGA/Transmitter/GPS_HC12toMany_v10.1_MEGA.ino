@@ -41,7 +41,7 @@ const uint16_t HALF_SEC = 500;
 const int32_t zone_hours= +8;    
             
 int h,m,s,d,mth,yy,yyyy,c,mTable,SummedDate,DoW,leap,cTable,i=1,j,bip=0;             
-String Mdn,DAYX,TIMEX,TIMEY,DATEX,UTC=" U+",LOGO =((String) (char)127)+UTC+zone_hours+" "+((String)(char)129),Sat=((String)(char)129),SAT=((String)(char)129),tx="tx1,",deli=",";       
+String Mdn,DAYX,TIMEX,TIMEY,DATEX,UTC="U+",LOGO =((String)(char)127)+" "+UTC+zone_hours+" "+((String)(char)129),Sat=((String)(char)129),SAT=((String)(char)129),tx="tx1,",deli=",";       
 char dayxx[10],timexx[15],datex[10],logo[25],TX[64];
 const char *GPS[5]={dayxx,timexx,datex,logo};    
 
@@ -59,7 +59,7 @@ void setup(void)
   P.setTextAlignment(PA_CENTER);      
   P.print("S&G GPS v10");  
    
-Timer1.initialize(999910); 
+Timer1.initialize(1000000); 
 Timer1.attachInterrupt(transmitData); 
 Timer1.start(); 
   
@@ -78,7 +78,7 @@ Timer1.start();
 
 
 void transmitData() {
-  if(Serial2.availableForWrite()){
+if(Serial2.availableForWrite()){
 Serial2.write(TX,tx.length());}
 Serial2.println();
 
@@ -185,7 +185,7 @@ void printGPSdata()
   DATEX+=".";
   DATEX+=String(yyyy);
    
-  tx =DATEX+deli+DAYX+deli+TIMEZ+deli;
+  tx =DATEX+deli+DAYX+deli+TIMEZ+deli+UTC+zone_hours+deli;
   tx.toCharArray(TX,64);
   
   LOGO.toCharArray(logo, 15);
