@@ -25,7 +25,7 @@
 #define CS_PIN      53     // UNO SPI 10 SS
 #define CLK_PIN     52     // UNO SPI 13 SCK 
 #define Pz          11     // Piezo VCC + GND     (2pin ,stick direct to Mega)
-#define f           4096   // Piezo Tone ic C note  
+#define f           4186   // Piezo Tone ic C note  
 #define Prn_LedM    transmitData();P.print(TIMEX);delay(HALF_SEC);P.print(TIMEY)
 
 //NEO TX == >MEGA RX (pin19) + Vcc 3V3 + GND on MEGA Serial2 (3wire)
@@ -43,7 +43,7 @@ const int32_t zone_hours= +8;
             
 int h,m,s,d,mth,yy,yyyy,c,mTable,SummedDate,DoW,leap,cTable,i=1,j,bip=0;             
 String Mdn,DAYX,TIMEX,TIMEY,DATEX,UTC="U+",LOGO =((String)(char)127)+" "+UTC+zone_hours+" "+((String)(char)129),Sat=((String)(char)129),SAT=((String)(char)129),tx="tx1,",deli=",";       
-char dayxx[10],timexx[15],datex[10],logo[25],TX[64];
+char dayxx[10],timexx[15],datex[11],logo[25],TX[64];
 const char *GPS[5]={dayxx,timexx,datex,logo};    
 
 char Time []   = ":00:00"; 
@@ -193,7 +193,7 @@ void printGPSdata()
   LOGO.toCharArray(logo, 15);
  
  Serial.print(TIMEZ);Serial.print(" ,");Serial.print(DAYX);Serial.print(" ,");Serial.println(DATEX);
- DAYX.toCharArray(dayxx,10);DATEX.toCharArray(datex,10);
+ DAYX.toCharArray(dayxx,10);DATEX.toCharArray(datex,11);
  TIMEX.toCharArray(timexx, 15);
  
  sequences();
