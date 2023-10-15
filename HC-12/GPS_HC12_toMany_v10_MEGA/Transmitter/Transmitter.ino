@@ -25,7 +25,7 @@
 #define CS_PIN      53     // UNO SPI 10 SS
 #define CLK_PIN     52     // UNO SPI 13 SCK 
 #define Pz          11     // Piezo VCC + GND     (2pin ,stick direct to Mega)
-#define f           4186   // Piezo Tone ic C note  
+#define f           4186   // Piezo Tone in C note  
 #define Prn_LedM    transmitData();P.print(TIMEX);delay(HALF_SEC);P.print(TIMEY)
 
 //NEO TX == >MEGA RX (pin19) + Vcc 3V3 + GND on MEGA Serial2 (3wire)
