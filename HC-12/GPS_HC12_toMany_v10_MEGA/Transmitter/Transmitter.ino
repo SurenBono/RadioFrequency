@@ -223,15 +223,15 @@ switch (i)
      case 35:Prn_LedM;break;  case 36:Prn_LedM;break;  
      case 37:Prn_LedM;break;  case 38:Prn_LedM;break;
      case 39:Prn_LedM;break;  case 40:Prn_LedM;break;
-	 case 41:Prn_LedM;break;  case 42:Prn_LedM;break;
-	 case 43:Prn_LedM;break;  case 44:Prn_LedM;break;
-	 case 45:Prn_LedM;break;  case 46:Prn_LedM;break;
-	 case 47:Prn_LedM;break;  case 48:Prn_LedM;break;
-	 case 49:Prn_LedM;break;  case 50:Prn_LedM;break;
-	 case 51:Prn_LedM;break;  case 52:Prn_LedM;break;
-	 case 53:Prn_LedM;break;  case 54:Prn_LedM;break;
-	 case 55:Prn_LedM;break;  case 56:Prn_LedM;break;
-	 case 57:Prn_LedM;break;  case 58:Prn_LedM;break;
+     case 41:Prn_LedM;break;  case 42:Prn_LedM;break;
+     case 43:Prn_LedM;break;  case 44:Prn_LedM;break;
+     case 45:Prn_LedM;break;  case 46:Prn_LedM;break;
+     case 47:Prn_LedM;break;  case 48:Prn_LedM;break;
+     case 49:Prn_LedM;break;  case 50:Prn_LedM;break;
+     case 51:Prn_LedM;break;  case 52:Prn_LedM;break;
+     case 53:Prn_LedM;break;  case 54:Prn_LedM;break;
+     case 55:Prn_LedM;break;  case 56:Prn_LedM;break;
+     case 57:Prn_LedM;break;  case 58:Prn_LedM;break;
 	 
      case 59:transmitData();P.print(dayxx);delay(HALF_SEC);break;
      case 60:transmitData();P.print(datex);delay(HALF_SEC);break;
