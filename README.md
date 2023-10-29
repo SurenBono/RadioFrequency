@@ -8,7 +8,7 @@ Featuring :
 - Half Duplex espnow based (≈50m)
 - Radio Controlled Timekeeping Clocks
   
-Example of GPS RCC : 
+Example of GPS Radio Controlled Clock: 
 https://youtu.be/RQRmjgVkUP0?si=
 https://youtu.be/l5Thg5okGEM?si=jsONOiux47JkXzW1
 
